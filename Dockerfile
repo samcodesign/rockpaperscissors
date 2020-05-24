@@ -2,6 +2,6 @@ FROM python:3.7-alpine
 
 ADD . .
 
-RUN pip3 install Cryptodome
+RUN pip install pycryptodome
 
 CMD [ "python", "./rsp.py" ]
